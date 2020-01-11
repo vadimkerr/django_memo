@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My memos</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'memo/css/main.css' %}">
+</head>
+<body>
+    <h1>Your memos</h1>
+    {% if memos %}
+        <p><a href="{% url 'memo:create' %}">Create new memo</a></p>
+        <ul class="memo-list">
+        {% for memo in memos %}
+            <li><a href="{% url 'memo:detail' memo.pk %}">{{ memo.title }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>You have no memos yet...</p>
+        <p><a href="{% url 'memo:create' %}">Try to create one</a></p>
+    {% endif %}
+</body>
+</html>

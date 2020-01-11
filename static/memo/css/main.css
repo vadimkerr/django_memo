@@ -1,0 +1,107 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+body {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    margin: 0 auto;
+    width: 100%;
+    max-width: 740px;
+
+    padding: 2em 3em;
+}
+
+a {
+    text-decoration: none;
+    color: #2a8cf5;
+    outline: none;
+}
+
+a::-moz-focus-inner {
+    border: none;
+}
+
+
+label {
+    display: block;
+    color: #a0a0a0;
+}
+
+input:hover {
+    outline: none;
+}
+
+
+input[type=text] {
+    width: 100%;
+    font-size: 1.2rem;
+
+    border: none;
+    border-bottom: 2px solid #bbbbbb;
+    margin-top: 1em;
+}
+
+textarea {
+    width: 100%;
+    font-size: 1rem;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid #bbbbbb;
+    margin-top: 1em;
+
+}
+
+input[type=submit] {
+    margin-top: 2em;
+    border: none;
+    border-radius: 0.2em;
+    padding: 1em 2em;
+    outline: none;
+    font-size: 0.8rem;
+}
+
+input[type=submit]:hover {
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+input[type=submit]::-moz-focus-inner {
+    border: none;
+}
+
+
+h1 {
+    margin-bottom: 1em;
+    color: #F98F43;
+}
+
+ul {
+    padding: 0;
+}
+
+.memo-list li {
+    text-decoration: none;
+    background-color: #ececec;
+    border-radius: 3px;
+    margin-bottom: 1em;
+    list-style-type: none;
+}
+
+.memo-list li a {
+    padding: 1em 1.5em;
+    display: block;
+    color: black;
+}
+
+.memo-detail {
+    padding: 4em;
+    background-color: #ececec;
+    border-radius: 3px;
+}
+
+.memo-detail p {
+    line-height: 1.8em;
+}

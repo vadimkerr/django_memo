@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memo: {{ memo.title }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'memo/css/main.css' %}">
+</head>
+<body>
+    <div class="memo-detail">
+        <h1>{{ memo.title }}</h1>
+        <p>{{ memo.text }}</p>
+    </div>
+    <br>
+    <p><a href="{% url 'memo:update' memo.pk %}">Edit memo</a></p>
+    <p><a href="{% url 'memo:delete' memo.pk %}">Delete memo</a></p>
+    <p><a href="{% url 'memo:list' %}">Go to your memos</a></p>
+</body>
+</html>

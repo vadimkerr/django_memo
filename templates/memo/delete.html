@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete memo</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'memo/css/main.css' %}">
+</head>
+<body>
+    <h1>Delete memo</h1>
+    <form method="post">{% csrf_token %}
+        <p>Are you sure about deleting "{{ memo.title }}"?</p>
+        <input type="submit" value="Delete">
+    </form>
+</body>
+</html>

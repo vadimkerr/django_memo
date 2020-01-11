@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memo</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'memo/css/main.css' %}">
+</head>
+<body>
+    <div class="box">
+        <h1>Memo</h1>
+        <p>Memo is a simple Django-based website for taking notes</p>
+        <p>Give it a try: <a href="{% url 'memo:create' %}">create a memo</a> or <a href="{% url 'memo:list' %}">see the list</a> of your memos</p>
+    </div>
+</body>
+</html>
