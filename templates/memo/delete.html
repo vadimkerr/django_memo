@@ -13,5 +13,6 @@
         <p>Are you sure about deleting "{{ memo.title }}"?</p>
         <input type="submit" value="Delete">
     </form>
+    <p><a href="{% url 'memo:detail' memo.pk %}">or go back to memo</a></p>
 </body>
 </html>
