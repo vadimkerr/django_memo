@@ -1,4 +1,4 @@
-Memo: Simple CRUD note taking app
+# Memo: Simple CRUD note taking app
 
 ![Memo](https://i.imgur.com/CVXvasd.png)
 
