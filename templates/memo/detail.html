@@ -10,7 +10,7 @@
 <body>
     <div class="memo-detail">
         <h1>{{ memo.title }}</h1>
-        <p>{{ memo.text }}</p>
+        <p style="white-space: pre-wrap;">{{ memo.text }}</p>
     </div>
     <br>
     <p><a href="{% url 'memo:update' memo.pk %}">Edit memo</a></p>
