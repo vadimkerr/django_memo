@@ -17,6 +17,9 @@ Then paste in your environment variables into .env file
 ```
 > docker-compose up --build -d
 ```
+By default an instanse of the app run by docker-compose will use PostgreSQL as a database;
+
+When run locally sqlite3 will be used.
 
 ## Run migrations
 ```
